@@ -10,7 +10,7 @@
 
 body{
 	font-family: 'Catamaran', sans-serif;
-	font-size: 25px;
+	font-size: 20px;
 	color: #777;
 }
 header{
@@ -28,11 +28,14 @@ header{
 	text-align: left;
 	color: var(--negro);
 	padding: 120px;
-	margin-top: 0;
+	display: grid;
+	align-content: left;
+	height: 100%;
+	
 }
 
 #Hero h1{
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: 600;
 }
 
@@ -42,7 +45,7 @@ header{
 }
 
 .btn-primary{
-	 background-color: var(--negro);
+	background-color: var(--negro);
     color: white;
     border-radius: 108px;
     font-size: small;
@@ -57,6 +60,9 @@ header{
 	text-align: center;
 	color: fff;
 	background-attachment: fixed;
+	display: grid;
+	align-content: left;
+	height: 100%;
 }
 
 .overlay {
@@ -74,16 +80,15 @@ header{
 }
 
 #info-producto{
-	background-color: var(--fondo-gris);
 	padding-top: 40px;
 	padding-bottom: 20px;
 }
 
-#info-producto h2,a {
+#info-producto a, h2{
 	color: var(--negro);
 	font-weight: 800;
-	
-}
+	}
+
 #info-producto p{
 	color: var(--color-contenido);
 }
@@ -92,11 +97,15 @@ header{
 	background-image: url("../img/product-parallax-2.jpg");
 	background-position: center;
 	background-size: cover;
-	text-align: center;
+	text-align: left;
 	color: fff;
 	background-attachment: fixed;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 90px;
+	padding-bottom: 90px;
+	display: grid;
+	align-content: left;
+	height: 100%;
+
 }
 
 #cta-flex h2,a{
@@ -110,9 +119,52 @@ header{
 
 #cta-flex{
 	background-color: var(--fondo-gris);
-	padding-top: 40px;
-	padding-bottom: 20px;
 }
+
+.product{
+	margin: 20;
+}
+	
+#products{
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: grid;
+	align-content: center;
+	height: 100%;
+}
+
+
+#products p,
+h2{
+	text-align: center;
+	margin: 0px;
+	padding-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+#products p{
+	color: var(--color-contenido);
+	padding-top: 0px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.star {
+	color: #CCCCCC;
+}
+
+#clientes{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	display: grid;
+	align-content: center;
+	height: 100%;
+	background-color: var(--fondo-gris);
+}
+
 
 footer{
 	background-color: #30363d;
